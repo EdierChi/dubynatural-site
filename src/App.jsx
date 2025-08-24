@@ -199,7 +199,7 @@ const Testimonials = () => (
               {Array.from({length:5}).map((_,idx)=>(<StarIcon key={idx}/>))}
             </div>
             <blockquote className="mt-3 text-neutral-700 italic">“En 3 semanas mi perro dejó de rascarse y tiene más energía. El empaque por porciones es súper práctico.”</blockquote>
-            <figcaption className="mt-4 text-sm text-neutral-500">Laura G. — San José, CA</figcaption>
+            <figcaption className="mt-4 text-sm text-neutral-500">Laura G. — Villavicencio, Meta</figcaption>
           </figure>
         ))}
       </div>
@@ -296,7 +296,7 @@ const OrderForm = () => {
               <div className="mt-1 text-sm text-neutral-600">Entre 2%–3% del peso corporal: 240–360 g/día divididos en 2 comidas.</div>
             </div>
             <div className="mt-6 text-sm text-neutral-600">
-              ¿Mayorista o distribuidores? <a href="mailto:hola@dubynatural.com" className="text-emerald-700 font-semibold">Escríbenos</a> para listas de precios por volumen.
+              ¿Mayorista o distribuidores? <a href="mailto:duby.natural@gmail.com" className="text-emerald-700 font-semibold">Escríbenos</a> para listas de precios por volumen.
             </div>
           </div>
         </div>
@@ -311,11 +311,11 @@ const Footer = () => (
       <div className="grid md:grid-cols-4 gap-8 text-sm">
         <div>
           <div className="font-extrabold text-lg">Duby <span className="text-emerald-600">Natural</span></div>
-          <p className="mt-2 text-neutral-600">Comida BARF fresca y balanceada para perros y gatos. San José, California.</p>
+          <p className="mt-2 text-neutral-600">Comida BARF fresca y balanceada para perros y gatos. Entregas en Bogotá, Villavicencio y alrededores. Expansión a más ciudades de Colombia.</p>
           <div className="mt-3 flex items-center gap-3">
-            <a className="underline" href="https://www.instagram.com/duby.natural" target="_blank">Instagram</a>
+            <a className="underline" href="https://www.instagram.com/duby.natural_?igsh=NTc4MTIwNjQ2YQ==" target="_blank">Instagram</a>
             <a className="underline" href="https://wa.me/573114362857" target="_blank">WhatsApp</a>
-            <a className="underline" href="mailto:hola@dubynatural.com">Email</a>
+            <a className="underline" href="mailto:duby.natural@gmail.com">Email</a>
           </div>
         </div>
         <div>
