@@ -80,7 +80,7 @@ const Hero = () => (
             Alimentación real, resultados reales 🐶🐱
           </h1>
           <p className="mt-4 text-neutral-700 leading-relaxed">
-            En Duby Natural preparamos comida BARF balanceada con ingredientes frescos y locales. Más energía, mejor digestión y pelaje brillante. Entregas a domicilio en el Área de la Bahía.
+            En Duby Natural preparamos comida BARF balanceada con ingredientes frescos y locales. Más energía, mejor digestión y pelaje brillante. Entrega fría a domicilio en Bogotá, Villavicencio y alrededores. Expansión a más ciudades de Colombia.
           </p>
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <a href="#pedido" className="rounded-xl bg-emerald-600 px-5 py-3 text-white font-semibold hover:bg-emerald-700 transition shadow">
@@ -234,7 +234,7 @@ const FAQ = () => (
 );
 
 const OrderForm = () => {
-  const [form, setForm] = useState({ name: "", city: "San José, CA", pet: "Perro", weight: "", plan: "Semanal", phone: "" });
+  const [form, setForm] = useState({ name: "", city: "Bogotá y Villavicencio, Colombia", pet: "Perro", weight: "", plan: "Semanal", phone: "" });
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
   const openWhatsApp = () => {
     const msg = encodeURIComponent(`Hola Duby Natural! Soy ${form.name}. Ciudad: ${form.city}. Mascota: ${form.pet}. Peso: ${form.weight} kg. Plan: ${form.plan}. Tel: ${form.phone}. Quiero empezar mi plan BARF.`);
@@ -289,7 +289,7 @@ const OrderForm = () => {
               <li className="flex gap-2 items-start"><CheckIcon/>Evaluación nutricional personalizada.</li>
               <li className="flex gap-2 items-start"><CheckIcon/>Menús rotativos (pollo, res, cerdo, mixto).</li>
               <li className="flex gap-2 items-start"><CheckIcon/>Guía de transición de 7 días.</li>
-              <li className="flex gap-2 items-start"><CheckIcon/>Entrega fría a domicilio en Bay Area.</li>
+              <li className="flex gap-2 items-start"><CheckIcon/>Entrega fría a domicilio en Bogotá, Villavicencio y municipios cercanos.</li>
             </ul>
             <div className="mt-6 rounded-2xl bg-neutral-50 p-4 border">
               <div className="text-sm font-medium">Ejemplo de ración diaria (perro 12 kg)</div>
@@ -328,12 +328,13 @@ const Footer = () => (
         </div>
         <div>
           <div className="font-semibold">Cobertura</div>
-          <ul className="mt-2 space-y-2 text-neutral-600">
-            <li>San José</li>
-            <li>Santa Clara</li>
-            <li>Sunnyvale</li>
-            <li>Mountain View</li>
-          </ul>
+       <ul className="mt-2 space-y-2 text-neutral-600">
+  <li>Bogotá y alrededores</li>
+  <li>Villavicencio y alrededores</li>
+  <li>Próximamente más ciudades en Colombia</li>
+  <li>Envíos refrigerados a nivel nacional (consúltanos)</li>
+</ul>
+
         </div>
         <div>
           <div className="font-semibold">Legal</div>
