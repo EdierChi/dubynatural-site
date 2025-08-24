@@ -6,6 +6,7 @@ import resImg from "./Res.jpg";
 import cerdoImg from "./Cerdo.jpg";
 import pescadoImg from "./Pescado.jpg";
 import logo from "./logo.png.png";
+import heroImg from "./Perros.jpg";
 
 const CheckIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
@@ -103,7 +104,11 @@ const Hero = () => (
           </div>
         </div>
         <div className="relative">
-          <img className="w-full h-[420px] object-cover rounded-3xl shadow-xl" src="https://images.unsplash.com/photo-1596495578065-8f6e3837f72f?q=80&w=1600" alt="Perro feliz comiendo BARF"/>
+          <img
+  className="w-full h-[420px] object-cover rounded-3xl shadow-xl"
+  src={heroImg}
+  alt="Perro feliz comiendo BARF"
+/>
           <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow p-4 w-64">
             <div className="text-sm font-semibold">Resultados en 30 días</div>
             <ul className="mt-2 space-y-1 text-sm text-neutral-600">
