@@ -56,7 +56,7 @@ const Nav = () => (
         <a href="#faq" className="hover:text-neutral-900">FAQ</a>
       </nav>
       <div className="flex items-center gap-3">
-        <a href="https://wa.me/15555555555" target="_blank" className="hidden sm:inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold border border-emerald-600 text-emerald-700 hover:bg-emerald-50 transition">WhatsApp</a>
+        <a href="https://wa.me/573114362857" target="_blank" className="hidden sm:inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold border border-emerald-600 text-emerald-700 hover:bg-emerald-50 transition">WhatsApp</a>
         <a href="#pedido" className="inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-700 transition shadow-sm">Pedir ahora</a>
       </div>
     </Container>
@@ -229,7 +229,7 @@ const OrderForm = () => {
   const onChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
   const openWhatsApp = () => {
     const msg = encodeURIComponent(`Hola Duby Natural! Soy ${form.name}. Ciudad: ${form.city}. Mascota: ${form.pet}. Peso: ${form.weight} kg. Plan: ${form.plan}. Tel: ${form.phone}. Quiero empezar mi plan BARF.`);
-    window.open(`https://wa.me/15555555555?text=${msg}`, "_blank");
+    window.open(`https://wa.me/573114362857?text=${msg}`, "_blank");
   };
 
   return (
@@ -305,7 +305,7 @@ const Footer = () => (
           <p className="mt-2 text-neutral-600">Comida BARF fresca y balanceada para perros y gatos. San José, California.</p>
           <div className="mt-3 flex items-center gap-3">
             <a className="underline" href="https://www.instagram.com/duby.natural" target="_blank">Instagram</a>
-            <a className="underline" href="https://wa.me/15555555555" target="_blank">WhatsApp</a>
+            <a className="underline" href="https://wa.me/573114362857" target="_blank">WhatsApp</a>
             <a className="underline" href="mailto:hola@dubynatural.com">Email</a>
           </div>
         </div>
