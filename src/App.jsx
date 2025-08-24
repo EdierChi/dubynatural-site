@@ -52,10 +52,16 @@ const SectionTitle = ({ eyebrow, title, subtitle }) => (
 const Nav = () => (
   <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-neutral-100">
     <Container className="flex h-16 items-center justify-between">
-      <a href="#" className="flex items-center gap-3">
-        <img src="https://images.unsplash.com/photo-1558944351-cb66194f2d72?q=80&w=200" alt="Duby Natural logo" className="h-8 w-8 rounded-xl object-cover"/>
-        <span className="font-extrabold tracking-tight text-lg">Duby <span className="text-emerald-600">Natural</span></span>
-      </a>
+   <a href="#" className="flex items-center gap-3">
+  <img
+    src={logo}
+    alt="Duby Natural"
+    className="h-8 w-8 rounded-xl object-contain"
+  />
+  <span className="font-extrabold tracking-tight text-lg whitespace-nowrap">
+    Duby <span className="text-emerald-600">Natural</span>
+  </span>
+</a>
       <nav className="hidden md:flex items-center gap-8 text-sm text-neutral-700">
         <a href="#benefits" className="hover:text-neutral-900">Beneficios</a>
         <a href="#how" className="hover:text-neutral-900">Cómo funciona</a>
