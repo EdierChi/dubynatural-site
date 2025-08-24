@@ -188,24 +188,56 @@ const Products = () => (
   </section>
 );
 
+const testimonialsData = [
+  {
+    id: 1,
+    review: "En 3 semanas mi perro dejó de rascarse y tiene más energía. El empaque por porciones es súper práctico.",
+    name: "Laura G.",
+    location: "Villavicencio, Meta",
+  },
+  {
+    id: 2,
+    review: "Muy recomendado. A mi gato le encanta y noto su pelaje más brillante desde que cambiamos a Duby Natural.",
+    name: "Andrés P.",
+    location: "Bogotá, Cundinamarca",
+  },
+  {
+    id: 3,
+    review: "La entrega fue puntual y la comida llegó muy bien empacada. Excelente servicio y calidad.",
+    name: "Carolina R.",
+    location: "Villavicencio, Meta",
+  },
+];
+
 const Testimonials = () => (
   <section className="py-16 sm:py-24 bg-emerald-50/50">
     <Container>
-      <SectionTitle eyebrow="Confianza real" title="Lo que dicen nuestros clientes" subtitle="Resultados visibles y mascotas más felices."/>
+      <SectionTitle
+        eyebrow="Confianza real"
+        title="Lo que dicen nuestros clientes"
+        subtitle="Resultados visibles y mascotas más felices."
+      />
       <div className="mt-10 grid md:grid-cols-3 gap-6">
-        {[1,2,3].map((i) => (
-          <figure key={i} className="rounded-2xl border bg-white/80 p-6">
+        {testimonialsData.map((t) => (
+          <figure key={t.id} className="rounded-2xl border bg-white/80 p-6">
             <div className="flex gap-1 text-amber-500">
-              {Array.from({length:5}).map((_,idx)=>(<StarIcon key={idx}/>))}
+              {Array.from({ length: 5 }).map((_, idx) => (
+                <StarIcon key={idx} />
+              ))}
             </div>
-            <blockquote className="mt-3 text-neutral-700 italic">“En 3 semanas mi perro dejó de rascarse y tiene más energía. El empaque por porciones es súper práctico.”</blockquote>
-            <figcaption className="mt-4 text-sm text-neutral-500">Laura G. — Villavicencio, Meta</figcaption>
+            <blockquote className="mt-3 text-neutral-700 italic">
+              “{t.review}”
+            </blockquote>
+            <figcaption className="mt-4 text-sm text-neutral-500">
+              {t.name} — {t.location}
+            </figcaption>
           </figure>
         ))}
       </div>
     </Container>
   </section>
 );
+
 
 const FAQ = () => (
   <section id="faq" className="py-16 sm:py-24">
