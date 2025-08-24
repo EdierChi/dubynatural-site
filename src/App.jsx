@@ -1,5 +1,11 @@
 import React, { useState } from "react";
 
+// 👇 Agrega estas líneas aquí
+import polloImg from "./Pollo.jpg";
+import resImg from "./Res.jpg";
+import cerdoImg from "./Cerdo.jpg";
+import pescadoImg from "./Pescado.jpg";
+
 const CheckIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
     <path fillRule="evenodd" d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.28-1.53a.75.75 0 10-1.06-1.06l-4.72 4.72-2.22-2.22a.75.75 0 10-1.06 1.06l2.75 2.75c.3.3.79.3 1.06 0l5.25-5.25z" clipRule="evenodd" />
