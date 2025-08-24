@@ -155,10 +155,10 @@ const HowItWorks = () => (
 );
 
 const productsData = [
-  { id: "pollo", name: "Menú Pollo", desc: "Proteína magra, fácil digestión.", price: 11500, unit: "/porción 500g", img: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600" },
-  { id: "res", name: "Menú Res", desc: "Alto en hierro y sabor.", price: 13500, unit: "/porción 500g", img: "https://images.unsplash.com/photo-1615937691194-97dbd3f7f27a?q=80&w=1600" },
-  { id: "cerdo", name: "Menú Cerdo", desc: "Energía sostenida, rica en B1.", price: 6900, unit: "/porción 500g", img: "https://images.unsplash.com/photo-1615937691193-1d3c1c2f3a58?q=80&w=1600" },
-  { id: "mixto", name: "Menú Pescado", desc: "piel radiante, digestión fácil.", price: 6900, unit: "/porción 500g", img: "https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=1600" },
+  { id: "pollo", name: "Menú Pollo", desc: "Proteína magra, fácil digestión.", price: 11500, unit: "/porción 500g", img: polloImg },
+  { id: "res", name: "Menú Res", desc: "Alto en hierro y sabor.", price: 13500, unit: "/porción 500g", img: resImg },
+  { id: "cerdo", name: "Menú Cerdo", desc: "Energía sostenida, piel y pelaje más saludables.", price: 6900, unit: "/porción 500g", img: cerdoImg },
+  { id: "mixto", name: "Menú Pescado", desc: "piel radiante, aumenta la vitalidad.", price: 6900, unit: "/porción 500g", img: pescadoImg },
 ];
 
 const Products = () => (
