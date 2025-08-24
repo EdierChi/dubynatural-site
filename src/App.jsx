@@ -149,10 +149,10 @@ const HowItWorks = () => (
 );
 
 const productsData = [
-  { id: "pollo", name: "Menú Pollo", desc: "Proteína magra, fácil digestión.", price: 8.5, unit: "/porción 250g", img: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600" },
-  { id: "res", name: "Menú Res", desc: "Alto en hierro y sabor.", price: 9.5, unit: "/porción 250g", img: "https://images.unsplash.com/photo-1615937691194-97dbd3f7f27a?q=80&w=1600" },
-  { id: "cerdo", name: "Menú Cerdo", desc: "Energía sostenida, rica en B1.", price: 9.0, unit: "/porción 250g", img: "https://images.unsplash.com/photo-1615937691193-1d3c1c2f3a58?q=80&w=1600" },
-  { id: "mixto", name: "Menú Mixto", desc: "Rotación equilibrada para paladares exigentes.", price: 9.2, unit: "/porción 250g", img: "https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=1600" },
+  { id: "pollo", name: "Menú Pollo", desc: "Proteína magra, fácil digestión.", price: 11500, unit: "/porción 500g", img: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1600" },
+  { id: "res", name: "Menú Res", desc: "Alto en hierro y sabor.", price: 13500, unit: "/porción 500g", img: "https://images.unsplash.com/photo-1615937691194-97dbd3f7f27a?q=80&w=1600" },
+  { id: "cerdo", name: "Menú Cerdo", desc: "Energía sostenida, rica en B1.", price: 6900, unit: "/porción 500g", img: "https://images.unsplash.com/photo-1615937691193-1d3c1c2f3a58?q=80&w=1600" },
+  { id: "mixto", name: "Menú Pescado", desc: "piel radiante, digestión fácil.", price: 6900, unit: "/porción 500g", img: "https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=1600" },
 ];
 
 const Products = () => (
@@ -167,7 +167,10 @@ const Products = () => (
               <h3 className="font-semibold text-lg">{p.name}</h3>
               <p className="mt-1 text-sm text-neutral-600">{p.desc}</p>
               <div className="mt-3 flex items-end gap-1">
-                <span className="text-2xl font-bold text-neutral-900">${p.price.toFixed(2)}</span>
+                <span className="text-2xl font-bold text-neutral-900">
+  {p.price.toLocaleString("es-CO", { style: "currency", currency: "COP", minimumFractionDigits: 0 })}
+</span>
+
                 <span className="text-sm text-neutral-500">{p.unit}</span>
               </div>
               <a href="#pedido" className="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-neutral-900 text-white py-2.5 font-semibold group-hover:bg-neutral-800 transition">Añadir al plan</a>
